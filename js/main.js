@@ -31,7 +31,7 @@ g.append("text")
     .attr("font-size", "20px")
     .attr("text-anchor", "middle")
     .attr("transform", "rotate(-90)") // this makes the title run vertically down the y axis
-    .text("Revenue (£)")
+    .text("Revenue ($)")
 
 
 d3.json("data/revenues.json").then(function(data){
@@ -82,5 +82,5 @@ d3.json("data/revenues.json").then(function(data){
             .attr("x", function(d){return x(d.month)})
             .attr("width", x.bandwidth)
             .attr("height", function(d){return height - y(d.revenue)})
-            .attr("fill", "green");
+            .attr("fill", "blue");
 })
