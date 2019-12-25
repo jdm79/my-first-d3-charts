@@ -22,7 +22,7 @@ g.append("text")
     .attr("y", height + 50)
     .attr("font-size", "20px")
     .attr("text-anchor", "middle")
-    .text("Star Break revenue 2019")
+    .text("Graph showing monthly revenue")
 
 g.append("text")
     .attr("class", "y axis-label")
@@ -31,7 +31,7 @@ g.append("text")
     .attr("font-size", "20px")
     .attr("text-anchor", "middle")
     .attr("transform", "rotate(-90)") // this makes the title run vertically down the y axis
-    .text("Revenue - $")
+    .text("Revenue (£)")
 
 
 d3.json("data/revenues.json").then(function(data){
